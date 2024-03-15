@@ -28,8 +28,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 You can also try the project in an online editor:
 
-- [StackBlitz](https://stackblitz.com/github/your-username/your-repo-name)
-- [CodeSandbox](https://codesandbox.io/s/github/your-username/your-repo-name)
+- [stackblitz.com/~/github.com/Vitalii505/certs-parser-storage-angular-app](https://stackblitz.com/~/github.com/Vitalii505/certs-parser-storage-angular-app)
 
 ## Further help
 
