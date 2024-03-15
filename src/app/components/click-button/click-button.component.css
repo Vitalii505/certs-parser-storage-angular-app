@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+.click-button {
+  min-width: 110px;
+  padding: 6px 24px;
+  border-radius: 4px;
+  background-color: #EBEBEB;
+  border: 1px solid #232323;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.click-button:hover {
+  transform: scale(1.09);
+  background-color: rgba(0, 128, 0, 0.541);
+}

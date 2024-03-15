@@ -1,0 +1,38 @@
+:host {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 4px;
+  border: 1px solid #232323;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3px;
+  padding: 5px;
+  transition: transform .2s;
+}
+
+.item:hover {
+  transform: scale(1.02);
+  background-color: #f3d13885;
+}
+
+.delete-icon {
+  cursor: pointer;
+  padding: 5px 5px 0 0;
+  transition: transform .2s;
+}
+
+.delete-icon:hover {
+  transform: scale(1.2);
+}
+
+
+.selected {
+  background-color: #a7ca2981;
+}

@@ -1,0 +1,27 @@
+.wrapper{
+  position: relative;
+  padding: 30px 30px 50px 30px;
+  min-height: 300px;
+  background-color: #a7ca2981;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+.item {
+  display: flex;
+  gap: 4px;
+}
+
+
+.title {
+  font-weight: bolder;
+}
+
+.download{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}

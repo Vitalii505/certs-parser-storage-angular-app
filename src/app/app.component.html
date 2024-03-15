@@ -1,0 +1,18 @@
+<main class="main">
+  <div class="list-wrapper">
+    <app-click-button *ngIf="!isCertUploadView" [title]="'Додати'" (clicked)="handleBtnAddClick()"></app-click-button>
+    <app-click-button *ngIf="isCertUploadView" [title]="'Назад'" (clicked)="handleBtnBackClick()"></app-click-button>
+    <app-certs-list
+      [data]="parsedCert | certificatePipe"
+      (clicked)="handleCertificateListItemClick($event)"
+      [selectedId]="selectedCert?.parsedData?.serialNumber || ''"
+      (delete)="handleDeleteParsedDocument($event)"
+    ></app-certs-list>
+  </div>
+  <div>
+    <app-cert-view *ngIf="isCertView" [certificate]="selectedCert"></app-cert-view>
+    <app-cert-upload *ngIf="isCertUploadView" (certsLoaded)="handleCertLoaded($event)"></app-cert-upload>
+  </div>
+</main>
+
+<router-outlet></router-outlet>
